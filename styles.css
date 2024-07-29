@@ -57,13 +57,13 @@
     transform: rotateY(180deg);
 }
 
-/* @keyframes rotate {
+@keyframes rotate {
     0% { transform: rotateY(0deg); }
     25% { transform: rotateY(90deg); }
     50% { transform: rotateY(180deg); }
     75% { transform: rotateY(270deg); }
     100% { transform: rotateY(360deg); }
-} */
+}
 
 #ContentContainer .play-now {
     margin-top: 50px;
@@ -93,7 +93,7 @@ i {
     left: 48%;
     font-size: 4vw;
     color: var(--clr-accent-white);
-    animation: pulse .5s alternate infinite;
+    animation: pulse 1s alternate infinite;
 }
 
 @keyframes pulse {
