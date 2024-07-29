@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <title>Jogo da velha</title>
+    <title>Jogo da Memória</title>
 </head>
 <body>
-    
+    <section id="HomeScreen">
+        <!-- <div id="LoadingScreen">
+            <div class="loader"></div>
+        </div> -->
+        
+        <div id="ContentContainer">
+            <div class="home-title">
+                <h1><span>J</span><span>O</span><span>G</span><span>O</span> <span>D</span><span>A</span></h1>
+                <h1><span>M</span><span>E</span><span>M</span><span>Ó</span><span>R</span><span>I</span><span>A</span></h1>
+            </div>
+            <a href="#ChoseLevel" class="play-now">JOGUE AGORA</a>
+            <a href="#ChoseLevel"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="ChoseLevel">
+        <div class="container-lvl">
+            <h1>ESCOLHA UMA FASE</h1>
+            <div class="lvl-options">
+                <a href="/gamemodes/easy-game.html"><span>4X4</span></a>
+                <a href=""><span>6X6</span></a>
+                <a href=""><span>8X8</span></a>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://kit.fontawesome.com/42557ab126.js" crossorigin="anonymous"></script>
+<script>
+    // window.addEventListener('load', function() {
+    //     var loadingScreen = document.getElementById('loading-screen')
+    //     var mainContent = document.getElementById('main-content')
+    //     setTimeout(function() {
+    //         loadingScreen.style.display = 'none'
+    //         mainContent.style.display = 'block'
+    //     }, 2000);
+    // })
+</script>
 </html>
