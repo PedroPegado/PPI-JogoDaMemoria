@@ -16,7 +16,11 @@
     --clr-accent-white: #FFFFFF;
 }
 
-section {
+body {
+    background-color: var(--clr-primary);
+}
+
+.game {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +31,7 @@ section {
     display: grid;
     grid-template-columns: repeat(8, 9vw);
     gap: 5px;
+    margin-top: 10px;
 }
 
 .card {
@@ -37,12 +42,12 @@ section {
     justify-content: center;
     border: none;
     font-size: 24px;
-    color: black;
     cursor: pointer;
+    background-color: var(--clr-accent-white);
 }
 
 .image-card img {
-    width: 8.5vw;
+    width: 8.75vw;
     height: 5vw;
     object-fit: cover;
 }
@@ -57,4 +62,51 @@ section {
     background-color: var(--clr-secondary);
     z-index: 999;
     position: relative;
+    transition: .5s;
+}
+
+.flipped .front:hover {
+    background-color: var(--clr-accent-pink);
+}
+
+.reset-button {
+    background-color: var(--clr-accent-pink);
+    border: none;
+    border-radius: 10px;
+    color: var(--clr-accent-white);
+    font-family: 'Press Start 2P';
+    font-size: 1vw;
+    width: 12vw;
+    height: 4vw;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.reset-button:hover {
+    background-color: var(--clr-secondary);
+    color: var(--clr-accent-pink);
+}
+
+.back {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.back a i {
+    font-size: 2.5vw;
+}
+
+.back h1 {
+    height: 100%;
+    font-family: 'Press Start 2P';
+    color: var(--clr-accent-white);
+    margin-top: 20px;
+    font-size: 1.5vw;
 }
